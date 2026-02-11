@@ -1,0 +1,73 @@
+/* 全体の設定 */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ランキングアイテムの枠組み */
+.ranking-item {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto 15px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.ranking-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* 順位の数字 */
+.rank {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff0000; /* YouTubeカラー */
+    width: 60px;
+    text-align: center;
+}
+
+/* サムネイル */
+.thumbnail {
+    width: 160px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 20px;
+}
+
+/* 動画情報 */
+.info {
+    flex: 1;
+}
+
+.video-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.channel-title {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.view-count {
+    display: block;
+    margin-top: 8px;
+    font-weight: bold;
+    color: #444;
+}
